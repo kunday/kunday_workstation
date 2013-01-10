@@ -17,6 +17,7 @@
 #TODO: install macvim.
 #TODO: install twitter.
 #TODO: install Google Chrome Canary.
+#TODO: install maven2, maven3
 
 pushd `pwd`
 if rvm --version 2>/dev/null; then
