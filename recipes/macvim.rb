@@ -4,13 +4,13 @@ unless File.exists?("/Applications/MacVim.app")
     recursive true
   end
 
-  remote_file "#{Chef::Config[:file_cache_path]}/macvim.tbz" do
+  remote_file "#{Chef::Config[:file_cache_path]}/macvim.zip" do
     source "https://macvim.googlecode.com/files/MacVim-snapshot-66.tbz"
     owner WS_USER
   end
 
   execute "extract mac vim to local" do
-    command "tar -xvf #{Chef::Config[:file_cache_path]}/macvim.tbz -C MacVim"
+    command "tar -xvf #{Chef::Config[:file_cache_path]}/macvim.zip -C MacVim"
     user WS_USER
 
     # This is required to unzip into Applications
