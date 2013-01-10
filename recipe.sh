@@ -32,6 +32,7 @@ cookbook_paths:
 recipes:
 - kunday_workstation::caffeine
 - kunday_workstation::macvim
+- kunday_workstation::chrome_canary
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
 - pivotal_workstation::ccmenu
