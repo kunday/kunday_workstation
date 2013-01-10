@@ -10,12 +10,14 @@ unless File.exists?("/Applications/MacVim.app")
   end
 
 	execute "create local directory" do
-		command "mkdir -p MacVim"
+		command "mkdir -p #{Chef::Config[:file_cache_path]}/MacVim"
 		user WS_USER
+
+    group "admin"
 	end
 
   execute "extract mac vim to local" do
-    command "tar -xvf #{Chef::Config[:file_cache_path]}/macvim.tbz -C MacVim"
+    command "tar -xvf #{Chef::Config[:file_cache_path]}/macvim.tbz -C #{Chef::Config[:file_cache_path]}/MacVim"
     user WS_USER
 
     # This is required to unzip into Applications
@@ -23,7 +25,7 @@ unless File.exists?("/Applications/MacVim.app")
   end
 
   execute "copy mac vim to applications" do
-    command "cp MacVim/MacVim-snapshot-66/MacVim.app /Applications"
+    command "cp -r #{Chef::Config[:file_cache_path]}/MacVim/MacVim-snapshot-66/MacVim.app /Applications/"
     user WS_USER
 
     # This is required to unzip into Applications
