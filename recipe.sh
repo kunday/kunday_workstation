@@ -10,7 +10,13 @@
 # http://github.com/tommyh/solo_wizard
 # (c) 2012, Tom Hallett
 # This script may be freely distributed under the MIT license.
+
 #TODO: install intellij idea 12.
+#TODO: install tunnelblick.
+#TODO: install spotify.
+#TODO: install macvim.
+#TODO: install twitter.
+#TODO: install Google Chrome Canary.
 
 pushd `pwd`
 if rvm --version 2>/dev/null; then
@@ -70,6 +76,9 @@ recipes:
 - pivotal_workstation::unix_essentials
 - pivotal_workstation::user_owns_usr_local
 - pivotal_workstation::virtualbox
+- pivotal_workstation::1password
+- pivotal_workstation::evernote
+- pivotal_workstation::zsh
 EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
