@@ -33,6 +33,7 @@ recipes:
 - kunday_workstation::caffeine
 - kunday_workstation::macvim
 - kunday_workstation::chrome_canary
+- kunday_workstation::sparrow
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
 - pivotal_workstation::ccmenu
@@ -82,6 +83,7 @@ recipes:
 - pivotal_workstation::1password
 - pivotal_workstation::evernote
 - pivotal_workstation::zsh
+- pivotal_workstation::osx_updates
 EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
