@@ -14,11 +14,9 @@
 #TODO: install intellij idea 12.
 #TODO: install tunnelblick.
 #TODO: install spotify.
-#TODO: install macvim.
 #TODO: install twitter.
 #TODO: install Google Chrome Canary.
 #TODO: install maven2, maven3
-#TODO: install caffeine.
 
 pushd `pwd`
 if rvm --version 2>/dev/null; then
@@ -33,6 +31,7 @@ cookbook_paths:
 - $PWD
 recipes:
 - kunday_workstation::caffeine
+- kunday_workstation::macvim
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
 - pivotal_workstation::ccmenu
