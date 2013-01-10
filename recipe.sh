@@ -32,6 +32,7 @@ cat > soloistrc <<EOF
 cookbook_paths:
 - $PWD
 recipes:
+- kunday_workstation::caffeine
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
 - pivotal_workstation::ccmenu
@@ -86,6 +87,11 @@ if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
 else
   git clone https://github.com/pivotal/pivotal_workstation.git
+fi
+if [[ -d kunday_workstation ]]; then
+  cd kunday_workstation && git pull && cd ..
+else
+  git clone https://github.com/kunday/kunday_workstation.git
 fi
 if [[ -d dmg ]]; then
   cd dmg && git pull && cd ..
