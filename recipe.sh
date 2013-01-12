@@ -75,7 +75,7 @@ recipes:
 - pivotal_workstation::sizeup
 - pivotal_workstation::skype
 - pivotal_workstation::sshd_on
-- pivotal_workstation::textmate
+- pivotal_workstation::textmate2
 - pivotal_workstation::textmate_bundles
 - pivotal_workstation::textmate_preferences
 - pivotal_workstation::tmux

@@ -1,6 +1,7 @@
 unless File.exists?("/Applications/Gitifier.app")
 	remote_file "#{Chef::Config[:file_cache_path]}/Gitifier.zip" do
 		source "http://github.com/downloads/psionides/Gitifier/Gitifier-1.3.zip"
+		checksum "12ccdbcd20c0cb15b0cccea07c6d8518"
 		owner WS_USER
 	end
 	execute "unzip Caffeine" do
