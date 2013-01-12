@@ -34,6 +34,7 @@ recipes:
 - kunday_workstation::macvim
 - kunday_workstation::chrome_canary
 - kunday_workstation::idea12
+- pivotal_workstation::redis
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
 - pivotal_workstation::ccmenu
