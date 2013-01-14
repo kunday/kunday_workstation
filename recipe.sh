@@ -35,6 +35,7 @@ recipes:
 - kunday_workstation::chrome_canary
 - kunday_workstation::idea12
 - kunday_workstation::gitifier
+- pivotal_workstation::sourcetree
 - pivotal_workstation::redis
 - pivotal_workstation::ack
 - pivotal_workstation::alfred
@@ -90,7 +91,7 @@ EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
 else
-  git clone https://github.com/pivotal/pivotal_workstation.git
+  git clone https://github.com/kunday/pivotal_workstation.git
 fi
 if [[ -d kunday_workstation ]]; then
   cd kunday_workstation && git pull && cd ..
