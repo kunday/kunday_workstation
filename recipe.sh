@@ -79,6 +79,7 @@ recipes:
 - pivotal_workstation::textmate_bundles
 - pivotal_workstation::textmate_preferences
 - pivotal_workstation::tmux
+- pivotal_workstation::flux
 - pivotal_workstation::unix_essentials
 - pivotal_workstation::user_owns_usr_local
 - pivotal_workstation::virtualbox
@@ -86,6 +87,7 @@ recipes:
 - pivotal_workstation::evernote
 - pivotal_workstation::zsh
 - pivotal_workstation::osx_updates
+- pivotal_workstation::sourcetree
 EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
