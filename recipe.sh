@@ -69,7 +69,6 @@ recipes:
 - pivotal_workstation::mouse_locator
 - pivotal_workstation::mysql
 - pivotal_workstation::node_js
-- pivotal_workstation::postgres
 - pivotal_workstation::qt
 - pivotal_workstation::rvm
 - pivotal_workstation::screen_sharing_app
@@ -80,7 +79,6 @@ recipes:
 - pivotal_workstation::textmate_bundles
 - pivotal_workstation::textmate_preferences
 - pivotal_workstation::tmux
-- pivotal_workstation::flux
 - pivotal_workstation::unix_essentials
 - pivotal_workstation::user_owns_usr_local
 - pivotal_workstation::virtualbox
