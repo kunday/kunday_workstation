@@ -47,16 +47,10 @@ recipes:
 - pivotal_workstation::dropbox
 - pivotal_workstation::enable_assistive_devices
 - pivotal_workstation::firefox
-- pivotal_workstation::flycut
 - pivotal_workstation::function_keys
 - pivotal_workstation::git
-- pivotal_workstation::github_for_mac
-- pivotal_workstation::gitx
-- pivotal_workstation::git_config_global_defaults
-- pivotal_workstation::git_scripts
 - pivotal_workstation::global_environment_variables
 - pivotal_workstation::homebrew
-- pivotal_workstation::imagemagick
 - pivotal_workstation::increase_shared_memory
 - pivotal_workstation::inputrc
 - pivotal_workstation::iterm2
@@ -81,12 +75,10 @@ recipes:
 - pivotal_workstation::tmux
 - pivotal_workstation::unix_essentials
 - pivotal_workstation::user_owns_usr_local
-- pivotal_workstation::virtualbox
 - pivotal_workstation::1password
 - pivotal_workstation::evernote
 - pivotal_workstation::zsh
 - pivotal_workstation::osx_updates
-- pivotal_workstation::sourcetree
 EOF
 if [[ -d pivotal_workstation ]]; then
   cd pivotal_workstation && git pull && cd ..
