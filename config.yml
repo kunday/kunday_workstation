@@ -1,0 +1,18 @@
+brew:
+- vim
+- git
+- tmux
+- docker
+- boot2docker
+cask:
+- virtualbox
+- github
+- gitifier
+- macvim
+- google-chrome
+- fish
+- fishapp
+- firefox
+- dropbox
+- iterm2
+- 1password
