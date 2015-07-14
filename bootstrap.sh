@@ -30,9 +30,3 @@ curl -L https://gist.githubusercontent.com/kunday/665224/raw/c7dfdf90ee8943630b0
 
 git config --global user.name "Arv Kunday"
 git config --global user.email "mail@kunday.com"
-
-echo 'removing old install of fish'
-rm -rf ~/.oh-my-fish
-
-echo 'setting up fish'
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish

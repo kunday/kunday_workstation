@@ -16,3 +16,9 @@ cask:
 - dropbox
 - iterm2
 - 1password
+- atom
+- kitematic
+- docker-compose
+- docker-machine
+- transmission
+- vlc
