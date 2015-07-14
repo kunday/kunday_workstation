@@ -22,3 +22,5 @@ cask:
 - docker-machine
 - transmission
 - vlc
+- sizeup
+- amethyst
